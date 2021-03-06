@@ -1,0 +1,59 @@
+
+section#impressionen {
+  position: relative;
+  min-height: 500px;
+  background-image: url('./../img/servers.jpeg');
+  background-position: 50% 80%;
+  background-size: cover;
+  background-attachment: fixed;
+
+  #impressionnen-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  #ci-1 {
+    height: 200px;
+    background-image: url('./../img/network_250.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  #ci-2 {
+    height: 200px;
+    background-image: url('./../img/server-tower.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  #ci-3 {
+    height: 200px;
+    background-image: url('./../img/network_switch.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .carousel-indicators {
+    bottom: -70px;
+  }
+
+  .carousel-indicators li {
+    background-color: #2E7BFF;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+ }
+
+
+
+}
+
+
+
