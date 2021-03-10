@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="925e81fb-870e-4ec7-a293-3c4ac24f0b93" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/app.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_my-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_my-styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/my-styles/_general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/my-styles/_general.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/my-styles/_section-id-products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/my-styles/_section-id-products.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +19,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1pMTUfb3KYy1hYqwsPyW3BNxNHa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -28,7 +41,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -42,7 +55,11 @@
       <workItem from="1614991982440" duration="337000" />
       <workItem from="1615057007321" duration="349000" />
       <workItem from="1615066580777" duration="1500000" />
-      <workItem from="1615152039275" duration="3864000" />
+      <workItem from="1615152039275" duration="4197000" />
+      <workItem from="1615237527740" duration="885000" />
+      <workItem from="1615319352950" duration="4504000" />
+      <workItem from="1615405866841" duration="253000" />
+      <workItem from="1615408458360" duration="3260000" />
     </task>
     <servers />
   </component>
