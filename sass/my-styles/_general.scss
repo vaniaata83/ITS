@@ -4,9 +4,17 @@
 //scroll-behavior: smooth;
 //}
 
+@import "../../node_modules/bootstrap/scss/variables";
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .oleo-font {
@@ -19,6 +27,12 @@ section {
 }
 
 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -37,4 +51,39 @@ img {
 .active-link {
   color: $primary !important;
   font-weight: bold;
+}
+
+
+.wrapper {
+  position: relative;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  border: 3px solid $primary;
+  color: $primary;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  transition-property: color, opacity;
+  z-index: 999;
+
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
+
+  &:hover i{
+    color: white;
+  }
+
+
+  i {
+    font-size: 1.5rem;
+  }
 }
