@@ -6,12 +6,25 @@ section#about-us {
     position: relative;
   }
 
-  img {
-    width: 100%;
-    height: auto;
-    //display: inline-block;
-  }
+}
 
+.underlinedHeading {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
 
+.headingContent {
+  position: relative;
+}
 
+.headingContent::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 8px;
+  background-color: $primary;
+  position: absolute;
+  left: 0;
+  bottom: 16px;
 }

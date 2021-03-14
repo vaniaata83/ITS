@@ -9949,7 +9949,8 @@ section {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .rounded-img {
@@ -9960,6 +9961,11 @@ img {
 .heading {
   font-size: 4rem;
   letter-spacing: 2px;
+}
+
+.active-link {
+  color: #007bff !important;
+  font-weight: bold;
 }
 
 header {
@@ -9979,7 +9985,7 @@ header .black-overlay {
   background-color: rgba(0, 0, 0, 0.3);
 }
 header nav {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #263238;
 }
 header #header-content {
   padding-top: 150px;
@@ -10003,9 +10009,26 @@ header .nav-link:hover {
 section#about-us .container {
   position: relative;
 }
-section#about-us img {
-  width: 100%;
-  height: auto;
+
+.underlinedHeading {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.headingContent {
+  position: relative;
+}
+
+.headingContent::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 8px;
+  background-color: #007bff;
+  position: absolute;
+  left: 0;
+  bottom: 16px;
 }
 
 section#services {
@@ -10035,8 +10058,14 @@ section#products span {
   font-size: 12px;
   color: #2E7BFF;
 }
+section#products .card {
+  min-height: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-section#impressionen {
+section#clients {
   position: relative;
   min-height: 500px;
   background-image: url("./../img/servers.jpeg");
@@ -10044,7 +10073,7 @@ section#impressionen {
   background-size: cover;
   background-attachment: fixed;
 }
-section#impressionen #impressionnen-overlay {
+section#clients #clients-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -10052,34 +10081,34 @@ section#impressionen #impressionnen-overlay {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-section#impressionen #ci-1 {
+section#clients #ci-1 {
   height: 200px;
   background-image: url("./../img/network_250.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
-section#impressionen #ci-2 {
+section#clients #ci-2 {
   height: 200px;
   background-image: url("./../img/server-tower.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
-section#impressionen #ci-3 {
+section#clients #ci-3 {
   height: 200px;
   background-image: url("./../img/network_switch.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
-section#impressionen .carousel-indicators {
+section#clients .carousel-indicators {
   bottom: -70px;
 }
-section#impressionen .carousel-indicators li {
+section#clients .carousel-indicators li {
   background-color: #2E7BFF;
   width: 15px;
   height: 15px;
   border-radius: 50%;
 }
-section#impressionen .carousel-control-next-icon {
+section#clients .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
 
@@ -10123,6 +10152,68 @@ section#impressionen .carousel-control-next-icon {
 .fa-instagram:hover,
 .fa-youtube:hover {
   color: #d5d5d5;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  background-color: #263238;
+  min-height: 100px;
+  padding: 10px 0px 25px 0px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #CCC;
+  padding-bottom: 0;
+  margin-bottom: 8px;
+}
+
+.footer_bottom_ul {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  display: table;
+  margin: 10px auto;
+}
+
+.footer_bottom_ul li {
+  display: inline;
+}
+
+.footer_bottom_ul li a {
+  color: #999;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+.footer_bottom_ul li a:hover {
+  color: #1a4e97;
+}
+
+.social_footer_ul {
+  display: table;
+  margin: 15px auto 0 auto;
+  list-style-type: none;
+}
+
+.social_footer_ul li {
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+.social_footer_ul li a {
+  color: #CCC;
+  border: 1px solid #CCC;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.social_footer_ul li i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
 }
 
 @media (min-width: 577px) and (max-width: 767px) {

@@ -27,7 +27,7 @@
 <header>
 	<div class="black-overlay"></div>
 	<nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-		<div class="container">
+		<div id="nav" class="container">
 			<div class="my-logo">
 				<a href="#" class="navbar-brand d-block">
 					<img src="./img/logo.svg" alt="logo">
@@ -39,22 +39,23 @@
 			<div id="vani-nav" class="collapse navbar-collapse justify-content-end">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a href="#" class="nav-link active"><i class="fas fa-home"></i></a>
+						<a href="#header-content" class="nav-link js-smooth-scrolling"><i
+							class="fas fa-home"></i></a>
 					</li>
 					<li class="nav-item">
-						<a href="#about-us" class="nav-link">За нас</a>
+						<a href="#about-us" class="nav-link js-smooth-scrolling">За нас</a>
 					</li>
 					<li class="nav-item">
-						<a href="#services" class="nav-link">Услуги</a>
+						<a href="#services" class="nav-link js-smooth-scrolling">Услуги</a>
 					</li>
 					<li class="nav-item">
-						<a href="#products" class="nav-link">Продукти</a>
+						<a href="#products" class="nav-link js-smooth-scrolling">Продукти</a>
 					</li>
 					<li class="nav-item">
-						<a href="#impressionen" class="nav-link">Клиенти</a>
+						<a href="#clients" class="nav-link js-smooth-scrolling">Клиенти</a>
 					</li>
 					<li class="nav-item">
-						<a href="#contacts" class="nav-link">Контакти</a>
+						<a href="#contacts" class="nav-link js-smooth-scrolling">Контакти</a>
 					</li>
 
 				</ul>
@@ -65,7 +66,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 offset-lg-6 text-white">
-					<h2 class="oleo-font text-primary text-center heading">Lorem ipsum dolor sit</h2>
+					<div class="underlinedHeading">
+						<div class="headingContent">
+							<h2 class="oleo-font text-primary text-center heading">Lorem ipsum dolor sit</h2>
+						</div>
+					</div>
 					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores at
 						delectus dolore doloremque ea exercitationem magni, necessitatibus nisi, perferendis possimus
 						provident quibusdam quidem quisquam quo sunt temporibus, velit vero!</p>
@@ -82,10 +87,13 @@
 <section id="about-us" class="pr-0 position-relative">
 	<div class="bg-dots position-absolute" style="top: 0; left: 0; width: 100%; height: 100%">
 		<img src="./img/bg-dots.gif" alt="">
-		<img src="./img/bg-dots.gif" alt="">
 	</div>
 	<div class="container">
-		<h2 class="oleo-font text-primary text-center mb-4 heading" data-aos="fade-up"> About us</h2>
+		<div class="underlinedHeading mb-4">
+			<div class="headingContent">
+				<h2 class="oleo-font text-primary text-center heading" data-aos="fade-up"> About us</h2>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex expedita fuga in ipsam voluptas
@@ -115,7 +123,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
-				<h2 class="oleo-font text-primary text-center heading">Services</h2>
+				<div class="underlinedHeading">
+					<div class="headingContent">
+						<h2 class="oleo-font text-primary text-center heading">Services</h2>
+					</div>
+				</div>
 				<p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
 					neque Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aliquid assumenda consequatur
 					consequuntur deleniti dolor, doloribus facere harum impedit numquam officiis.</p>
@@ -157,13 +169,18 @@
 <!--  section#products  --
 ====================================================-->
 <section id="products" class="pr-0 position-relative">
-	<div class="bg-dots position-absolute" style="top: 0; left: 0; width: 100%; height: 100%"><img
-		src="./img/bg-dots.gif" alt=""></div>
+	<div class="bg-dots position-absolute" style="top: 0; left: 0; width: 100%; height: 100%">
+		<img src="./img/bg-dots.gif" alt="">
+	</div>
 
 	<div class="container">
-		<h1 class="text-center oleo-font text-primary heading mb-4">Products</h1>
+		<div class="underlinedHeading mb-4">
+			<div class="headingContent">
+				<h2 class="text-center oleo-font text-primary heading">Products</h2>
+			</div>
+		</div>
 		<div class="row">
-			<div class="card-deck">
+			<div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
 				<div class="card mb-4 mb-md-0 ">
 					<img src="img/product.jpg" alt="" class="card-img-top">
 					<div class="card-body">
@@ -177,6 +194,8 @@
 						<a href="" class="btn btn-outline-primary btn-sm">Buy</a>
 					</div>
 				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
 				<div class="card mb-4 mb-md-0 ">
 					<img src="img/product.jpg" alt="" class="card-img-top">
 					<div class="card-body">
@@ -190,6 +209,8 @@
 						<a href="" class="btn btn-outline-primary btn-sm">Buy</a>
 					</div>
 				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
 				<div class="card ">
 					<img src="img/product.jpg" alt="" class="card-img-top">
 					<div class="card-body">
@@ -206,6 +227,7 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 </section>
@@ -213,11 +235,14 @@
 
 <!--  section#impressionen  --
 ====================================================-->
-<section id="impressionen" class="text-white">
-	<div id="impressionnen-overlay"></div>
+<section id="clients" class="text-white">
+	<div id="clients-overlay"></div>
 	<div class="container">
-		<h2 class="oleo-font text-primary text-center my-4" style="position: relative;">Lorem ipsum dolor sit amet,
-			consectetur adipisicing elitlde pe vitae?</h2>
+		<div class="underlinedHeading mb-4">
+			<div class="headingContent">
+				<h2 class="text-center oleo-font text-primary heading">Clients</h2>
+			</div>
+		</div>
 		<div class="row justify-content-center">
 			<div class="col-md-10 col-lg-8">
 				<!---- Carousel Start ---->
@@ -260,68 +285,106 @@
 <!--  section#contact  --
 ====================================================-->
 <section id="contacts">
-	<div id="social" class="container-fluid padding">
+	<div id="social" class="container-fluid mb-5">
 		<div class="row connect text-center padding">
 			<div class="col-12">
-				<h2 class="oleo-font text-primary text-center heading">Contacts</h2>
+				<div class="underlinedHeading">
+					<div class="headingContent">
+						<h2 class="oleo-font text-primary text-center heading">Contacts</h2>
+					</div>
+				</div>
 			</div>
 			<hr>
 
 			<div class="col-12 social padding">
-				<a href="https://www.facebook.com/hidravlichni.markuchi/"><i class="fab fa-facebook"></i></a>
-				<a href="https://twitter.com/Bobiflex1"><i class="fab fa-twitter"></i></a>
-				<a href="https://plus.google.com/u/2/112334758379391392671"><i class="fab fa-google-plus-g"></i></a>
-				<a href="https://www.instagram.com/bobiflex76/"><i class="fab fa-instagram"></i></a>
-				<a href="#"><i class="fab fa-youtube"></i></a>
+				<a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+				<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+				<a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+				<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
 
 			</div>
 
 		</div>
 	</div>
 	<!--- Two Column Section -->
-	<div class="container-fluid padding">
-		<div class="row padding">
+	<div class="container-fluid">
+		<div class="row mx-auto" style="max-width: 1400px">
 			<div class="col-lg-6">
-				<h2>Свържете се с нас:</h2>
-				<p class="contact"><i class="fas fa-map-marker-alt"></i> 4230 Асеновград, ул. Катунско шосе 1а /до
-					сладкарски цех "Амбелино"/
-				</p>
-				<p class="contact"><i class="fas fa-envelope"></i> bobiflex76@gmail.com</p>
-				<p class="contact"><i class="fas fa-phone"></i> +359 889 134 153</p>
+				<h2 class="text-primary">Свържете се с нас:</h2>
 
-			</div>
-
-			<div class="col-lg-6 mapouter">
-				<div class="gmap_canvas">
-					<iframe width="600" height="250" id="gmap_canvas"
-							src="https://maps.google.com/maps?q=asenovgrad%2C%20katunsko%20shose%201a&t=&z=13&ie=UTF8&iwloc=&output=embed"
-							frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-					</iframe>
-					<a href="https://www.embedgooglemap.net"></a>
+				<div class="contact-data row mb-3">
+					<div class="contact-data__icon col-1 d-flex align-items-center"><i
+						class="fas fa-map-marker-alt fa-2x"></i></div>
+					<div class="contact-data__info col-11 d-flex align-items-center">6000 Стара Загора,<br> ул. Велико
+						Търново 22
+					</div>
 				</div>
-				<style>.mapouter {
-                    text-align: right;
-                    height: 500px;
-                    width: 600px;
-                }
-
-                .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 500px;
-                    width: 600px;
-                }
-				</style>
-				<small>
-					<a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=28532&url=42158&tid1=google3"
-					   rel="nofollow"></a>
-				</small>
+				<div class="contact-data row mb-3">
+					<div class="contact-data__icon col-1 d-flex align-items-center"><i
+						class="fas fa-envelope fa-2x"></i></div>
+					<div class="contact-data__info col-11 d-flex align-items-center">office@itsystem.com</div>
+				</div>
+				<div class="contact-data row mb-3">
+					<div class="contact-data__icon col-1 d-flex align-items-center"><i class="fas fa-phone fa-2x"></i>
+					</div>
+					<div class="contact-data__info col-11 d-flex align-items-center">+359 889 999 999</div>
+				</div>
 			</div>
+			<div class="col-lg-6">
+				<iframe width="100%" height="250" id="gmap_canvas"
+						src="https://maps.google.com/maps?q=UTF8&iwloc=&output=embed"
+						frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+				</iframe>
+				<a href="https://www.embedgooglemap.net"></a>
+			</div>
+			<!--				<style>.mapouter {
+								text-align: right;
+								height: 500px;
+								width: 600px;
+							}
+
+							.gmap_canvas {
+								overflow: hidden;
+								background: none !important;
+								height: 500px;
+								width: 600px;
+							}
+							</style>-->
+			<small>
+				<a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=28532&url=42158&tid1=google3"
+				   rel="nofollow"></a>
+			</small>
 		</div>
 	</div>
 </section>
 <!---- section#contact END ---->
+<footer class="footer">
+	<div class="container">
+		<ul class="footer_bottom_ul">
+			<li><a href="#"><i
+				class="fas fa-home"></i></a></a></li>
+			<li><a href="#about-us" class="js-smooth-scrolling">За нас</a></li>
+			<li><a href="#services" class="js-smooth-scrolling">Услуги</a></li>
+			<li><a href="#products" class="js-smooth-scrolling"></a></li>
+			<li><a href="#clients" class="js-smooth-scrolling">Клиенти</a></li>
+			<li><a href="#contacts" class="js-smooth-scrolling">Контакти</a></li>
+		</ul>
 
+		<p class="text-center">Copyright @2021 | Designed With by <a href="#">Vania Atanasova</a></p>
+
+		<ul class="social_footer_ul">
+			<li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+			<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
+			<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+		</ul>
+		<!--social_footer_ul ends here-->
+
+	</div>
+
+</footer>
 
 <!--  SCRIPTS  --
 ====================================================-->
@@ -346,6 +409,29 @@
     AOS.init({
         duration: 300,
     });
+
+    // Get the height of the header
+    let headerHeight = $(".navbar").outerHeight();
+    console.log(headerHeight);
+    $links = $('.js-smooth-scrolling')
+
+    // Attach the click event
+    $links.on("click", function (e) {
+        $('.navbar-collapse').removeClass('show');
+        //e.preventDefault();
+        $links.removeClass('active-link');
+        $(this).addClass('active-link');
+        let target = $(this).attr("href"); //Get the target
+        //console.log(target);
+        let scrollToPosition = $(target).offset().top - headerHeight;
+
+        $('html').animate({'scrollTop': scrollToPosition}, 600, function () {
+            window.location.hash = target;
+            //console.log(target);
+        });
+
+    });
+
 </script>
 <!---- App.js ---->
 <script src="js/app.js"></script>

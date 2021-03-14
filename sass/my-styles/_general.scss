@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Teko:wght@300;600&display=swap');
 
-//font-family: 'Montserrat', sans-serif;
-//font-family: 'Teko', sans-serif;
+//html {
+//scroll-behavior: smooth;
+//}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -11,7 +13,6 @@ body {
   font-family: 'Teko', sans-serif;
 }
 
-
 section {
   padding: 3rem 0;
   background-color: white;
@@ -19,7 +20,8 @@ section {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .rounded-img {
@@ -30,4 +32,9 @@ img {
 .heading {
   font-size: 4rem;
   letter-spacing: 2px;
+}
+
+.active-link {
+  color: $primary !important;
+  font-weight: bold;
 }
