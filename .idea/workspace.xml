@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="925e81fb-870e-4ec7-a293-3c4ac24f0b93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/my-styles/_general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/my-styles/_general.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +60,7 @@
       <workItem from="1615670966083" duration="7526000" />
       <workItem from="1615731385045" duration="24009000" />
       <workItem from="1615763116116" duration="298000" />
-      <workItem from="1615838242212" duration="5194000" />
+      <workItem from="1615838242212" duration="6103000" />
     </task>
     <servers />
   </component>
