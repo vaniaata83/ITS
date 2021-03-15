@@ -144,7 +144,7 @@
 				</div>
 				<button class="navbar-toggler border-0" data-toggle="collapse" data-target="#vani-nav">
 					<i class="fas fa-bars fa-2x"></i>
-					<i class="fas fa-times d-none"></i>
+					<i class="fas fa-times fa-2x"></i>
 				</button>
 				<div id="vani-nav" class="collapse navbar-collapse justify-content-end">
 					<ul class="navbar-nav">
@@ -431,8 +431,9 @@
 					<h2 class="text-primary">Свържете се с нас:</h2>
 
 					<div class="contact-data row mb-3">
-						<div class="contact-data__icon col-1 d-flex align-items-center"><i
-							class="fas fa-map-marker-alt fa-2x"></i></div>
+						<div class="contact-data__icon col-1 d-flex align-items-center">
+							<i class="fas fa-map-marker-alt fa-2x"></i>
+						</div>
 						<div class="contact-data__info col-11 d-flex align-items-center">6000 Стара Загора,<br> ул.
 							Велико
 							Търново 22
@@ -484,13 +485,16 @@
 				<div
 					class="col-lg-7 d-flex justify-content-center justify-content-lg-start align-items-center mb-4 mb-lg-0">
 					<ul class="footer__links">
-						<li><a href="#"><i
-							class="fas fa-home"></i></a></a></li>
-						<li><a href="#about-us" class="js-smooth-scrolling">За нас</a></li>
-						<li><a href="#services" class="js-smooth-scrolling">Услуги</a></li>
-						<li><a href="#products" class="js-smooth-scrolling">Продукти</a></li>
-						<li><a href="#clients" class="js-smooth-scrolling">Клиенти</a></li>
-						<li><a href="#contacts" class="js-smooth-scrolling">Контакти</a></li>
+						<div class="d-flex flex-column flex-lg-row">
+							<li><a href="#"><i class="fas fa-home"></i></a></li>
+							<li><a href="#about-us" class="js-smooth-scrolling">За нас</a></li>
+							<li><a href="#services" class="js-smooth-scrolling">Услуги</a></li>
+						</div>
+						<div class="d-flex flex-column flex-lg-row">
+							<li><a href="#products" class="js-smooth-scrolling">Продукти</a></li>
+							<li><a href="#clients" class="js-smooth-scrolling">Клиенти</a></li>
+							<li><a href="#contacts" class="js-smooth-scrolling">Контакти</a></li>
+						</div>
 					</ul>
 				</div>
 				<div class="col-lg-5 d-flex justify-content-center justify-content-lg-end align-items-center ">
@@ -568,9 +572,19 @@
 
     let vaniNav = $('#vani-nav'); // TODO
     let navbarTogglerButton = $('.navbar-toggler');
-    //<i className="fas fa-bars fa-2x"></i>
-    //<i className="fas fa-times d-none"></i>
-    //if (vaniNav.hasClass(''))
+
+    if (!navbarTogglerButton.hasClass('show')) {
+        //navbarTogglerButton.find('.fa-bars').css('opacity', 1);
+        navbarTogglerButton.find('.fa-times').addClass('zeroOpacity')
+    } else {
+        navbarTogglerButton.find('.fa-bars').addClass('zeroOpacity')
+        //navbarTogglerButton.find('.fa-times').css('opacity', 1);
+    }
+
+    navbarTogglerButton.on('click', function () {
+        $(this).find('.fa-times').toggleClass('zeroOpacity')
+        $(this).find('.fa-bars').toggleClass('zeroOpacity')
+    });
 
 </script>
 <!---- App.js ---->

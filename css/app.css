@@ -10018,6 +10018,30 @@ svg {
   font-size: 1.5rem;
 }
 
+.scrollToTopHide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+button.navbar-toggler {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+button.navbar-toggler i {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  transition-property: opacity;
+}
+
+.zeroOpacity {
+  opacity: 0;
+}
+
 header {
   position: relative;
   min-height: 100vh;

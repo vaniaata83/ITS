@@ -5,29 +5,20 @@ $('.carousel').carousel({
 
 const scrollToTopButton = $('.scrollToTop');
 if ($(window).scrollTop() < headerHeight) {
-    scrollToTopButton
-        .css({
-            opacity: 0,
-            pointerEvents: 'none'
-        })
+    scrollToTopButton.addClass('scrollToTopHide')
 }
 
 $(window).on('scroll', function () {
-    let scrollTop = $(this).scrollTop();
+        let scrollTop = $(this).scrollTop();
 
-    if (scrollTop < headerHeight) {
-        scrollToTopButton
-            .css({
-                opacity: 0,
-                pointerEvents: 'none'
-            })
-    } else {
-        scrollToTopButton
-            .css({
-                opacity: 1,
-                pointerEvents: 'initial'
-            })
+        if (scrollTop < headerHeight) {
+            if (!scrollToTopButton.hasClass('scrollToTopHide')) {
+                scrollToTopButton.addClass('scrollToTopHide')
+            }
+        } else {
+            if (scrollToTopButton.hasClass('scrollToTopHide')) {
+                scrollToTopButton.removeClass('scrollToTopHide')
+            }
+        }
     }
-
-
-});
+);
